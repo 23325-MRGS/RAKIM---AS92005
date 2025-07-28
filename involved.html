@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Get Inloved Protecting Our Wetlands</title>
+	<meta name="description" content="Here are things you can do to help protect our wetlands">
+	<meta name="keywords" content="protect NZ wetlands, help preserve our wetlands">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#9DBAEB">
+	<link href ="assets/stylesheet.css" rel="stylesheet" type="text/css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans%7CMargarine&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+</head>
+
+<body>			
+	
+		<div class="header"><a href = "index.html"><img src = "images/logo.png" alt="The Wetlands Of Aotearoa Logo"></a></div>
+	
+	<!-- Nav -->	
+	
+		<div class = "nav-bar"> 					
+			
+			<div class = "main-nav" id = "mainNav">									
+				<div class = "nav-button"> <a href = "index.html">Home</a> </div>
+				<div class = "nav-button"> <a href = "about.html">About Wetlands</a> </div>
+				<div class = "nav-button"> <a href = "visit.html">Wetlands You Can Visit</a> </div>				
+				<div class = "nav-button-active"> <a href = "involved.html">Get Involved</a> </div>
+			</div>
+					
+			
+			<div class= "mobile-nav" id="mobileNav">
+				<a href="javascript:void(0)" style="font-size:28px;cursor:pointer;color:#FFFFFF;padding:10px;" onclick="closeNav()">&#10005;</a>
+				<a href = "index.html">Home</a> 
+				<a href = "about.html">About Wetlands</a> 
+				<a href = "visit.html">Wetlands You Can Visit</a> 			
+				<a href = "involved.html">Get Involved</a> 
+			</div>
+			
+			<span class="mobile-menu" id="theMenu" onclick="openNav()">
+				<img src = "images/burger.gif" alt="Mobile Menu Icon">
+			</span>			
+			
+		</div>
+		
+		<!-- ENDS Nav -->	
+		
+		
+		<!-- Javascript for Nav -->
+		
+		<script>
+			
+			//when mobile nav icon is clicked
+			function openNav() {		
+				document.getElementById("mobileNav").style.height = "250px";
+				document.getElementById("theMenu").style.visibility = "hidden";		  
+			}
+			
+			//when mobile nav is closed
+			function closeNav() {
+			  document.getElementById("mobileNav").style.height = "0px";
+			  document.getElementById("theMenu").style.visibility = "visible";			
+			}
+			
+			//if window is resized when mobile nav is open			
+			window.onresize = displayWindowSize;
+			
+			function displayWindowSize() {
+			
+				var x = document.getElementById("mainNav");
+				if (window.getComputedStyle(x).display === "flex") {
+					document.getElementById("mobileNav").style.height = "0px";
+					document.getElementById("theMenu").style.visibility = "visible";
+				}				
+				
+			}		
+			
+		</script>
+	
+		<!-- ENDS Javascript for Nav -->
+		
+		
+			
+		
+		<div class="content-con-small"><!-- Main page content container -->
+						
+			<h2>Help Protect Our Wetlands</h2>		
+			
+			Protecting and restoring wetlands has many benefits – they can clean pollution, give us recreational areas and a place for cultural practices.
+
+					
+			<h3>How you can protect wetlands</h3>	
+			
+			<ul>
+			  <li>Keep rubbish and garden waste out of wetland areas.</li>
+			  <li>Control pest plants and animals in and around wetlands.</li>
+			  <li>Maintain the natural flow of water.</li>
+			  <li>Clean boats and fishing equipment to stop the spread of didymo (rock snot gross) an invasive algal bloom which is very hard to eradicate.</li>
+			  <li>Keep dogs away from wetland areas</li>
+			  <li>Walk on boardwalks and existing tracks and clean your footwear.</li>
+			</ul> 	
+			
+			<h3>Organisations You Can Join and Donate to: </h3>	
+			
+			<div class="pic-box-big">
+				<img src="images/pic13.jpg" alt="Forest & Bird Logo">
+			</div>
+			
+			<div class="pic-caption-big"><a href = "https://www.forestandbird.org.nz/support-us/appeals/save-our-wetlands" target="_blank">Support Forest & Bird</a></div><br>
+			
+			<div class="support-box">
+				<b>Forest & Bird</b> and 10 other organisations are currently developing a national wetland protection plan. Actions include; stopping further destruction of wetlands, mapping wetland areas and requiring landowners to account for drained wetlands.
+			</div><br>	
+			
+			<div class="pic-box-big">
+				<img src="images/pic14.jpg" alt="Wetland Trust Logo">
+			</div>
+			
+			<div class="pic-caption-big"><a href = "https://www.wetlandtrust.org.nz/join-us/" target="_blank">Support Wetland Trust</a></div><br>
+
+			<div class="youtube-small">	
+				<iframe src="https://www.youtube.com/embed/M4iIirZ_PI0?si=4w1bg8NV0VNaD_G9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div><br>
+			
+			<div class="support-box">
+				<b>The National Wetland Trust</b> is a charitable organisation which aims to increase the appreciation of wetlands and their values by all New Zealanders. They are currently planning a National Wetland Discovery Centre at Lake Rotopiko near Hamilton. <br><br>
+			
+				It will be a wildlife sanctuary with wetland gardens, trails, educational and research facilities. The centre will promote wetlands from all over NZ and how they compare to wetlands around the world.
+			</div><br>		
+			
+			<div class="pic-box-big">
+				<img src="images/pic16.jpg" alt="Sea Cleaners Boat & Logo">
+			</div>
+			
+			<div class="pic-caption-big"><a href = "https://www.seacleaners.com" target="_blank">Support Sea Cleaners</a></div><br>
+			
+			<div class="support-box">
+				<b>The vision of SEA CLEANERS</b> is to preserve the NZ coastline for the benefit of marine life and for the enjoyment of everyone. They remove rubbish from the sea, harbours and oceans. The began operating in 2002 and have collected over 12.7 million litres of rubbish. You can donate or be a volunteer.
+			</div><br>
+			
+			<div class="pic-box-big">
+				<img src="images/pic18.jpg" alt="Auckland Council Logo & Project">
+			</div>
+			
+			<div class="pic-caption-big"><a href = "https://www.facebook.com/aklbiodiversity/" target="_blank">Visit Auckland Council's Biodiversity’s Facebook Page</a></div><br>
+			
+			<div class="support-box">
+				<b>The Auckland Council</b> has volunteer planting days all over the region. You can find notifications about upcoming planting days on Auckland Biodiversity’s Facebook page.
+			</div><br>
+			
+			
+			
+			<div class = "contact-form">			
+				
+				<div class = "form-title">Contact us to get involved</div>
+				
+				<form action = "thanks.html" method = "post">
+										
+					<div class = "form-input">
+						<input type="text" name="cname" maxlength="50" required placeholder="Name:" value= "">					
+					</div>				
+					
+					<div class = "form-input">
+						<input type="text" name="email" maxlength="50" placeholder="Email address:" required value=""> 			
+					</div>					
+					
+					<div class = "form-input">
+						<textarea rows="5" name = "body" required placeholder="Message:"></textarea>							
+					</div>
+										
+					<div class = "form-button">
+						<input type="submit" name="submit" value="Send Message">
+					</div>											
+					
+				</form>		
+			
+			</div><br>
+					
+		
+		</div><!-- ends main content con -->
+		
+					
+		<div class="footer-con"> 
+			
+			<div class = "footer-link"> <a href = "index.html">Home</a> </div>
+			<div class = "footer-link"> <a href = "about.html">About Wetlands</a> </div>
+			<div class = "footer-link"> <a href = "visit.html">Wetlands You Can Visit</a> </div>				
+			<div class = "footer-link"> <a href = "involved.html">Get Involved</a> </div>		
+		
+		</div>			
+	
+</body>
+
+</html>
