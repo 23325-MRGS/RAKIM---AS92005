@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Thank You!</title>
+	<meta name="description" content="Your message has been sent">
+	<meta name="keywords" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#9DBAEB">
+	<link href ="assets/stylesheet.css" rel="stylesheet" type="text/css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans%7CMargarine&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+</head>
+
+<body>			
+		
+		<div class="wrapper" style="min-height: calc(100vh - 80px);"><!-- wrapper to position footer at bootom -->
+		
+			<div class="header"><a href = "index.html"><img src = "images/logo.png" alt="The Wetlands Of Aotearoa Logo"></a></div>
+		
+			<!-- Nav -->	
+		
+			<div class = "nav-bar"> 					
+				
+				<div class = "main-nav" id = "mainNav">									
+					<div class = "nav-button"> <a href = "index.html">Home</a> </div>
+					<div class = "nav-button"> <a href = "about.html">About Wetlands</a> </div>
+					<div class = "nav-button"> <a href = "visit.html">Wetlands You Can Visit</a> </div>				
+					<div class = "nav-button-active"> <a href = "involved.html">Get Involved</a> </div>
+				</div>
+						
+				
+				<div class= "mobile-nav" id="mobileNav">
+					<a href="javascript:void(0)" style="font-size:28px;cursor:pointer;color:#FFFFFF;padding:10px;" onclick="closeNav()">&#10005;</a>
+					<a href = "index.html">Home</a> 
+					<a href = "about.html">About Wetlands</a> 
+					<a href = "visit.html">Wetlands You Can Visit</a> 			
+					<a href = "involved.html">Get Involved</a> 
+				</div>
+				
+				<span class="mobile-menu" id="theMenu" onclick="openNav()">
+					<img src = "images/burger.gif" alt="Mobile Menu Icon">
+				</span>			
+				
+			</div>
+			
+			<!-- ENDS Nav -->	
+			
+			
+			<!-- Javascript for Nav -->
+			
+			<script>
+				
+				//when mobile nav icon is clicked
+				function openNav() {		
+					document.getElementById("mobileNav").style.height = "250px";
+					document.getElementById("theMenu").style.visibility = "hidden";		  
+				}
+				
+				//when mobile nav is closed
+				function closeNav() {
+				  document.getElementById("mobileNav").style.height = "0px";
+				  document.getElementById("theMenu").style.visibility = "visible";			
+				}
+				
+				//if window is resized when mobile nav is open			
+				window.onresize = displayWindowSize;
+				
+				function displayWindowSize() {
+				
+					var x = document.getElementById("mainNav");
+					if (window.getComputedStyle(x).display === "flex") {
+						document.getElementById("mobileNav").style.height = "0px";
+						document.getElementById("theMenu").style.visibility = "visible";
+					}				
+					
+				}		
+				
+			</script>
+		
+			<!-- ENDS Javascript for Nav -->
+			
+			
+				
+			
+			<div class="content-con-small"><!-- Main page content container -->
+				
+				<br>
+				<h1 class = "center">Thank You!</h1>		
+				
+				<h3 class = "center">Your message has been sent.<br> We will be in touch.</h3>
+
+				<div class = "center">
+					<a href = "index.html">Back to Homepage <i class="fa fa-angle-double-right"></i></a>
+				</div><br><br>
+						
+			</div><!-- ends main content con -->
+		
+		</div> <!-- ends wrapper -->
+		
+		<div class="footer-con"> 
+			
+			<div class = "footer-link"> <a href = "index.html">Home</a> </div>
+			<div class = "footer-link"> <a href = "about.html">About Wetlands</a> </div>
+			<div class = "footer-link"> <a href = "visit.html">Wetlands You Can Visit</a> </div>				
+			<div class = "footer-link"> <a href = "involved.html">Get Involved</a> </div>		
+		
+		</div>						
+		
+	
+</body>
+
+</html>

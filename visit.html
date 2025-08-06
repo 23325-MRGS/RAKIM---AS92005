@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Wetlands You Can Visit</title>
+	<meta name="description" content="Let's look at some wetlands you can visit">
+	<meta name="keywords" content="visit NZ wetlands, trip to wetland">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#9DBAEB">
+	<link href ="assets/stylesheet.css" rel="stylesheet" type="text/css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans%7CMargarine&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+</head>
+
+<body>			
+	
+		<div class="header"><a href = "index.html"><img src = "images/logo.png" alt="The Wetlands Of Aotearoa Logo"></a></div>
+	
+	<!-- Nav -->	
+	
+		<div class = "nav-bar"> 					
+			
+			<div class = "main-nav" id = "mainNav">									
+				<div class = "nav-button"> <a href = "index.html">Home</a> </div>
+				<div class = "nav-button"> <a href = "about.html">About Wetlands</a> </div>
+				<div class = "nav-button-active"> <a href = "visit.html">Wetlands You Can Visit</a> </div>				
+				<div class = "nav-button"> <a href = "involved.html">Get Involved</a> </div>
+			</div>
+					
+			
+			<div class= "mobile-nav" id="mobileNav">
+				<a href="javascript:void(0)" style="font-size:28px;cursor:pointer;color:#FFFFFF;padding:10px;" onclick="closeNav()">&#10005;</a>
+				<a href = "index.html">Home</a> 
+				<a href = "about.html">About Wetlands</a> 
+				<a href = "visit.html">Wetlands You Can Visit</a> 			
+				<a href = "involved.html">Get Involved</a> 
+			</div>
+			
+			<span class="mobile-menu" id="theMenu" onclick="openNav()">
+				<img src = "images/burger.gif" alt="Mobile Menu Icon">
+			</span>			
+			
+		</div>
+		
+		<!-- ENDS Nav -->	
+		
+		
+		<!-- Javascript for Nav -->
+		
+		<script>
+			
+			//when mobile nav icon is clicked
+			function openNav() {		
+				document.getElementById("mobileNav").style.height = "250px";
+				document.getElementById("theMenu").style.visibility = "hidden";		  
+			}
+			
+			//when mobile nav is closed
+			function closeNav() {
+			  document.getElementById("mobileNav").style.height = "0px";
+			  document.getElementById("theMenu").style.visibility = "visible";			
+			}
+			
+			//if window is resized when mobile nav is open			
+			window.onresize = displayWindowSize;
+			
+			function displayWindowSize() {
+			
+				var x = document.getElementById("mainNav");
+				if (window.getComputedStyle(x).display === "flex") {
+					document.getElementById("mobileNav").style.height = "0px";
+					document.getElementById("theMenu").style.visibility = "visible";
+				}				
+				
+			}		
+			
+		</script>
+	
+		<!-- ENDS Javascript for Nav -->
+		
+		
+			
+		
+		<div class="content-con-small"><!-- Main page content container -->
+						
+			<h2>Wetlands You Can Visit</h2>		
+			
+			Here are some wetlands you can visit in Auckland and also throughout New Zealand.
+					
+		<h3>Auckland Wetlands</h3>	
+		
+			<a href = "https://www.aucklandcouncil.govt.nz/environment/plants-animals/plant-for-your-ecosystem/Documents/guide-to-aucklands-wetlands.pdf" target="_blank">A guide to Auckland's wetland brochure <i class="fa fa-angle-double-right"></i></a><br><br> 
+			
+			<div class="pic-box-big">
+				<img src="images/pic7.jpg" alt="An Image of Tawharanui Regional Park">
+			</div>			
+			<div class="pic-caption-big">Tawharanui Regional Park is a wildlife sanctuary and coastal farm park protected by a predator-proof fence. </div><br>
+			
+			
+			<div class="pic-box-big">
+				<img src="images/pic8.jpg" alt="An Image of Waiatarua Wetland">
+			</div>			
+			<div class="pic-caption-big">Waiatarua Wetland is a 20 hectare wetland in Meadowbank, Central Auckland has been recently restored by Auckland City Council following drainage in the 1930's. </div><br>
+			
+			
+			<div class="pic-box-big">
+				<img src="images/pic9.jpg" alt="An Image of Whatipu Dunes">
+			</div>			
+			<div class="pic-caption-big">Whatipu Dunes is a spectacular wilderness area, Whatipu is an extensive (1 km wide) sand flat on Auckland’s rugged west coast. </div>
+			
+			
+			<h3>National Wetlands</h3>
+							
+			<div class="pic-box-big">
+				<img src="images/pic10.jpg" alt="An Image of Waihora Forest Lagoon (Waikato)">
+			</div>			
+			<div class="pic-caption-big">Waihora Forest Lagoon (Waikato) is  a seasonal lagoon surrounded by tall mature kahikatea forest. </div><br>
+
+
+			<div class="pic-box-big">
+				<img src="images/pic11.jpg" alt="An Image of Pekapeka Regional Park (near Hastings)">
+			</div>			
+			<div class="pic-caption-big">Pekapeka Regional Park (near Hastings) This wetland covers 98 hectares and has been the site of a major restoration project since the 90s aimed to improve wetland capacity to regulate flood waters and increase the natural biodiversity. </div><br>
+			
+			
+			<div class="pic-box-big">
+				<img src="images/pic12.jpg" alt="An Image of Pupu Springs (Takaka)">
+			</div>			
+			<div class="pic-caption-big">Pupu Springs (Takaka) are the largest freshwater springs in NZ known for its clear fresh water. </div><br>
+							
+			<a href = "involved.html">Hey, why not get involved with protecting our precious wetlands <i class="fa fa-angle-double-right"></i></a><br><br>
+			
+		
+		</div><!-- ends main content con -->
+		
+					
+		<div class="footer-con"> 
+			
+			<div class = "footer-link"> <a href = "index.html">Home</a> </div>
+			<div class = "footer-link"> <a href = "about.html">About Wetlands</a> </div>
+			<div class = "footer-link"> <a href = "visit.html">Wetlands You Can Visit</a> </div>				
+			<div class = "footer-link"> <a href = "involved.html">Get Involved</a> </div>		
+		
+		</div>			
+	
+</body>
+
+</html>
